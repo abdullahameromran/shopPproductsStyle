@@ -1,0 +1,124 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,600;1,700&display=swap');
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 4rem 0 3rem;
+}
+
+body {
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    width: 100%;
+}
+
+
+/* cart */
+
+
+/* .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg-color);
+    z-index: -1;
+    /* background-color: red; */
+
+
+}
+*/
+/*------------------- header ------------------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 999;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 0;
+}
+.logo {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* -------------- Shop ------------------ */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 12px;
+}
+.shop {
+    margin-top: 2rem;
+}
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+.product-box {
+    position: relative;
+    transition: 0.4s all;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.product-box:hover {
+    padding: 10px;
+    transition: 0.4s all;
+    border: 0.5px solid rgb(95, 82, 82);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: 2px 2px 20px #a59999;
+}
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* background-color: var(--text-color); */
+    
+    color: var(--bg-color);
+    color: green;
+    cursor: pointer;
+    /* padding: 10px; */
+}
